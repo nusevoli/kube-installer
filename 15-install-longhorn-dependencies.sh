@@ -1,6 +1,6 @@
 #!/bin/bash
 ######################
-# 10-set-swap-firewall.sh
+# 15-install-longhorn-dependencies.sh
 ######################
 
 sudo echo "----------------------------------"
@@ -8,10 +8,6 @@ echo "$0"
 echo "----------------------------------"
 
 
+sudo apt install -y open-iscsi
+# sudo apt-get install -y open-iscsi nfs-common
 
-
-sudo swapoff -a && sudo sed -i '/swap/s/^/#/' /etc/fstab
-sudo ufw disable
-
-
-sudo apt install -y 

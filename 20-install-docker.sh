@@ -2,6 +2,14 @@
 ######################
 # 20-install-docker.sh
 ######################
+
+sudo echo "----------------------------------"
+echo "$0"
+echo "----------------------------------"
+
+
+
+
 sudo rm -f /var/lib/dpkg/lock
 
 sudo apt-get update

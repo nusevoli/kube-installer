@@ -3,6 +3,13 @@
 # 30-install-kube.sh
 ######################
 
+sudo echo "----------------------------------"
+echo "$0"
+echo "----------------------------------"
+
+
+
+
 cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf
 br_netfilter
 EOF

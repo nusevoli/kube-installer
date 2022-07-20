@@ -2,6 +2,14 @@
 ######################
 # 40-init-master.sh
 ######################
+
+sudo echo "----------------------------------"
+echo "$0"
+echo "----------------------------------"
+
+
+
+
 sudo hostnamectl set-hostname master
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16
 
